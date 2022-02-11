@@ -1,5 +1,5 @@
 import React from 'react'
-import Setup from './tutorial/1-useState/practice/1-error-example.js'
+import Setup from './tutorial/1-useState/practice/2-useState-basics'
 
 function App() {
   return (
