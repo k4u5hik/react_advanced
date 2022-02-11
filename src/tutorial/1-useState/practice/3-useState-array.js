@@ -13,6 +13,10 @@ const UseStateArray = () => {
           </div>
         )
       })}
+      <button className='btn' onClick={() => setPeople([])}>
+        {' '}
+        clear items
+      </button>
     </>
   )
 }
