@@ -11,7 +11,7 @@ const UseStateBasics = () => {
     if (text === 'random title') {
       setText('hello world')
     } else {
-      setText(' random title 2')
+      setText('random title')
     }
   }
 
