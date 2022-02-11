@@ -1,5 +1,5 @@
 import React from 'react'
-import Setup from './tutorial/1-useState/practice/3-useState-array'
+import Setup from './tutorial/1-useState/practice/4-useState-object'
 
 function App() {
   return (
