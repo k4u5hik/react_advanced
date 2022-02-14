@@ -1,5 +1,5 @@
 import React from 'react'
-import Setup from './tutorial/2-useEffect/practice/3-useEffect-fetch-data'
+import Setup from './tutorial/3-conditional-rendering/practice/1-multiple-returns'
 
 function App() {
   return (
