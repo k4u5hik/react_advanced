@@ -1,5 +1,5 @@
 import React from 'react'
-import Setup from './tutorial/3-conditional-rendering/practice/2-short-circuit'
+import Setup from './tutorial/3-conditional-rendering/practice/3-show-hide'
 
 function App() {
   return (
