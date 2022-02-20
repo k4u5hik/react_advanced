@@ -15,7 +15,12 @@ const ControlledInputs = () => {
     // console.log(firstName, email)
     if (firstName && email) {
       const person = { firstName, email }
-      console.log(person)
+      setPeople((people) => {
+        return [...people, person]
+      })
+      setFirstName('')
+      setEmail('')
+      // console.log(person)
     } else {
       console.log('empty values')
     }
@@ -50,6 +55,15 @@ const ControlledInputs = () => {
             add person
           </button>
         </form>
+        {people.map((person) => {
+          const { id, firstName, email } = person
+          return (
+            <div className='item'>
+              <h4>{firstName}</h4>
+              <p>{email}</p>
+            </div>
+          )
+        })}
       </article>
     </>
   )
