@@ -14,13 +14,13 @@ const ControlledInputs = () => {
     e.preventDefault()
     // console.log(firstName, email)
     if (firstName && email) {
-      const person = { firstName, email }
+      const person = { id: new Date().getTime().toString(), firstName, email }
       setPeople((people) => {
         return [...people, person]
       })
       setFirstName('')
       setEmail('')
-      // console.log(person)
+      console.log(person)
     } else {
       console.log('empty values')
     }
@@ -58,7 +58,7 @@ const ControlledInputs = () => {
         {people.map((person) => {
           const { id, firstName, email } = person
           return (
-            <div className='item'>
+            <div className='item' key={id}>
               <h4>{firstName}</h4>
               <p>{email}</p>
             </div>
