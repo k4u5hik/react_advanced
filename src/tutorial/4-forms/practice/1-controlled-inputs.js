@@ -8,10 +8,16 @@ import React, { useState } from 'react'
 const ControlledInputs = () => {
   const [firstName, setFirstName] = useState('')
   const [email, setEmail] = useState('')
+  const [people, setPeople] = useState([])
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(firstName, email)
+    // console.log(firstName, email)
+    if (firstName && email) {
+      console.log('submit the form')
+    } else {
+      console.log('empty values')
+    }
   }
 
   return (
