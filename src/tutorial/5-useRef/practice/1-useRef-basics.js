@@ -6,10 +6,12 @@ import React, { useEffect, useRef } from 'react'
 
 const UseRefBasics = () => {
   const refContainer = useRef(null)
+  const divContainer = useRef(null)
 
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(refContainer.current.value)
+    console.log(divContainer.current)
   }
   // console.log(refContainer)
   return (
@@ -19,6 +21,7 @@ const UseRefBasics = () => {
           <input type='text' ref={refContainer} />
           <button type='submit'>Submit</button>
         </div>
+        <div ref={divContainer}>hello world</div>
       </form>
     </>
   )
