@@ -1,5 +1,5 @@
 import React from 'react'
-import Setup from './tutorial/6-useReducer/practice/index'
+import Setup from './tutorial/6-useReducer/practice'
 
 function App() {
   return (
