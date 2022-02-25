@@ -13,7 +13,7 @@ const reducer = (state, action) => {
       modalContent: 'Item added successfully',
     }
   }
-  return state
+  throw new Error('no matching action type')
 }
 
 const defaultState = {
@@ -29,6 +29,7 @@ const Index = () => {
     if (name) {
       dispatch({ type: 'Testing' })
     } else {
+      dispatch({ type: 'Random' })
     }
   }
 
