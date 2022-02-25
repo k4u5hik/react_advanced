@@ -5,6 +5,14 @@ import { data } from '../../../data'
 
 const reducer = (state, action) => {
   console.log(state, action)
+  if (action.type === 'Testing') {
+    return {
+      ...state,
+      people: data,
+      isModalOpen: true,
+      modalContent: 'Item added successfully',
+    }
+  }
   return state
 }
 
