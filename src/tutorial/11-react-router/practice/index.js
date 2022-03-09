@@ -13,13 +13,19 @@ const ReactRouterSetup = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/about' component={About} />
-        <Route path='/people' component={People} />
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/people'>
+          <People />
+        </Route>
+        <Route path='*'>
+          <Error />
+        </Route>
       </Switch>
-      <Route path='*'>
-        <Error />
-      </Route>
     </Router>
   )
 }
