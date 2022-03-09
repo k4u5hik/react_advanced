@@ -12,9 +12,14 @@ import Navbar from './Navbar'
 const ReactRouterSetup = () => {
   return (
     <Router>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/about' component={About} />
-      <Route exact path='/people' component={People} />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/people' component={People} />
+      </Switch>
+      <Route path='*'>
+        <Error />
+      </Route>
     </Router>
   )
 }
