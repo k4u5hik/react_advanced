@@ -12,7 +12,7 @@ import Navbar from './Navbar'
 const ReactRouterSetup = () => {
   return (
     <Router>
-      {/* <Switch>
+      <Switch>
         <Route exact path='/'>
           <Home />
         </Route>
@@ -22,18 +22,18 @@ const ReactRouterSetup = () => {
         <Route path='/people'>
           <People />
         </Route>
+        <Route path='/person/:id' children={<Person />}></Route>
         <Route path='*'>
           <Error />
         </Route>
-      </Switch> */}
+      </Switch>
 
-      <Navbar />
-      <Switch>
+      {/* <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
         <Route path='/people' component={People} />
         <Route path='*' component={Error} />
-      </Switch>
+      </Switch> */}
     </Router>
   )
 }
