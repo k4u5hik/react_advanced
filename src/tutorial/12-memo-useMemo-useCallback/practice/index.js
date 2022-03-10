@@ -22,7 +22,7 @@ const Index = () => {
   )
 }
 
-const BigList = ({ products }) => {
+const BigList = React.memo(({ products }) => {
   useEffect(() => {
     console.log('BigList re-rendered')
   })
@@ -33,7 +33,7 @@ const BigList = ({ products }) => {
       })}
     </section>
   )
-}
+})
 
 const SingleProduct = ({ fields }) => {
   useEffect(() => {
